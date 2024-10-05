@@ -59,3 +59,44 @@ def place_ships():
             ships.append((ship_row, ship_col))
     return ships
 
+
+# Get player's guess (with input validation)
+def get_player_guess(board):
+    while True:
+        try:
+            # Ask for the row as a number between 1 and 5
+            guess_row = input(f"Guess Row (1-{Board_size}): ")
+            
+            # Check if the input is an integer and within the correct range
+            if guess_row.isdigit():
+                guess_row = int(guess_row)
+                if 1 <= guess_row <= Board_size:
+                    guess_row -= 1  # Convert to zero-indexed system
+                else:
+                    print(f"Invalid row! Please enter a number between 1 and {Board_size}.")
+                    continue  # Ask for input again
+            else:
+                print("Invalid input! Please enter a number.")
+                continue
+
+            # Ask for the column as a letter between A and E
+            guess_col = input(f"Guess Column (A-{chr(65 + Board_size - 1)}): ").upper()
+
+            # Check if the column is a letter within the allowed range
+            if len(guess_col) == 1 and 'A' <= guess_col <= chr(65 + Board_size - 1):
+                guess_col = ord(guess_col) - 65  # Convert 'A' to 0, 'B' to 1, etc.
+            else:
+                print(f"Invalid column! Please enter a letter between A and {chr(65 + Board_size - 1)}.")
+                continue  # Ask for input again
+
+            # Check if the guess has already been made or is a valid spot
+            if board[guess_row][guess_col] in ["O", "X"]:
+                print("You've already guessed that coordinate. Please try again.")
+                continue  # Ask for input again
+            
+            # Return the validated and converted guess
+            return (guess_row, guess_col)
+        
+        except ValueError:
+            print("Invalid input! Please enter a valid row number.")
+

@@ -131,3 +131,16 @@ I have checked the code to confirm that it operates correctly, even with these f
 
 ![Code Institute Python Linter](/assets/images/ci_python_linter.png)
 
+## Deployment
+
+The project was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+
+1. Go to the repository on GitHub.com
+2. Select 'Settings' near the top of the page.
+3. Select 'Pages' from the menu bar on the left of the page.
+4. Under 'Source' select the 'Branch' dropdown menu and select the main branch.
+5. Once selected, click the 'Save'.
+6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
+
+The live link can be found here - [Battleship](https://battleships-vs-computer-d6d3e8954180.herokuapp.com/)
+

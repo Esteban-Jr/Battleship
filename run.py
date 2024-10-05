@@ -42,7 +42,7 @@ def print_board(board):
     for i, row in enumerate(board):
         # Add row numbers (1-5) on the left side
         print(f"{i+1} " + " ".join(row))
-    print() # Print a newline after the board
+    print()     # Print a newline after the board
 
 # Function to randomly place the ship
 def place_ship():
@@ -66,7 +66,7 @@ def get_player_guess(board):
         try:
             # Ask for the row as a number between 1 and 5
             guess_row = input(f"Guess Row (1-{Board_size}): ")
-            
+
             # Check if the input is an integer and within the correct range
             if guess_row.isdigit():
                 guess_row = int(guess_row)
@@ -93,10 +93,10 @@ def get_player_guess(board):
             if board[guess_row][guess_col] in ["O", "X"]:
                 print("You've already guessed that coordinate. Please try again.")
                 continue  # Ask for input again
-            
+
             # Return the validated and converted guess
             return (guess_row, guess_col)
-        
+
         except ValueError:
             print("Invalid input! Please enter a valid row number.")
 
@@ -125,16 +125,16 @@ def reveal_ships(board, ships):
 def play_game():
     board = create_board()
     ships = place_ships()  # Define ships here and use them throughout the game
-    
+
     print("\n")
     print(f"Welcome to Battleships! You have {Max_turns} turns to sink {Num_ships} ships.\n")
-    
+
     for turn in range(Max_turns):
         turn_text = f"Turn {turn + 1}"
         print(f"\n{turn_text}")
         print("-" * len(turn_text))  # Underline the turn text
         print("")
-        
+
         # Print the board at the start of each turn (with ships hidden)
         print_board(board)
 

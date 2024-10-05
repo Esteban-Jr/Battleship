@@ -80,7 +80,7 @@ Before the game begins, you'll be asked a question: "Are you ready to start the 
 
 ### Handling Invalid Inputs
 
-If you enter anything other than "yes" or "no," the system will display a message indicating the input is invalid ("Invalid input. Please type 'yes' to start or 'no' to exit."). It will then repeatedly prompt you with "Type 'yes' to start or 'no' to exit:" until a valid response is given. This ensures the game begins only when the player is fully prepared and understands the rules.
+If you enter anything other than "yes" or "no," the system will display a message indicating the input is invalid ("Invalid input. Please type 'yes' to start or 'no' to exit."). It will then repeatedly prompt you with "Type 'yes' to start or 'no' to exit:" until a valid response is given. This ensures the game begins only when the player is fully prepared and understands the rules
 
 ![Invalid input](/assets/images/invalid_input.png)
 

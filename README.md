@@ -101,3 +101,9 @@ During gameplay, you'll be prompted to enter the coordinates for your shot in an
 
 ![Hit](/assets/images/hit.png)
 
+### Game Progress After a Hit
+
+- Following each hit, the game will proceed, giving you the opportunity to make your next guess
+- The objective is to sink all 5 enemy ships before depleting your 15 available shots. Each successful hit brings you one step closer to victory
+- If you manage to sink all the ships, the game will display a victory message congratulating you on your success in destroying all the enemy ships
+

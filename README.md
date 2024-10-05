@@ -107,3 +107,16 @@ During gameplay, you'll be prompted to enter the coordinates for your shot in an
 - The objective is to sink all 5 enemy ships before depleting your 15 available shots. Each successful hit brings you one step closer to victory
 - If you manage to sink all the ships, the game will display a victory message congratulating you on your success in destroying all the enemy ships
 
+### Game Over
+
+The game ends when either all enemy ships have been sunk or you have exhausted all your available shots. Here’s what occurs in each scenario:
+
+- Sinking All Ships:
+
+    - If you manage to hit all 5 enemy ships before using up your 15 shots, the game will display a congratulatory message indicating that you have won. This means you’ve outsmarted the computer and successfully completed your mission
+
+- Running Out of Shots:
+
+    - If you exhaust all 12 shots without sinking all the enemy ships, the game will notify you with a "Game Over" message. This message will indicate that you’ve run out of shots and include a summary of your performance, detailing how many ships remain afloat
+    - The game will then reveal to you where the remaining ships were
+

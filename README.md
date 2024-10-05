@@ -87,3 +87,9 @@ If you enter anything other than "yes" or "no," the system will display a messag
 During gameplay, you'll be prompted to enter the coordinates for your shot in an attempt to hit an enemy ship. The input process is simple, but it’s crucial to provide valid coordinates:
 
 ![Invalid coordinates](/assets/images/invalid_coordinates.png)
+
+### Entering Coordinates
+
+- Row Number: You must enter a row number between 1 and 5
+- Column Letter: You must enter a column letter between A and E
+

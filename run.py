@@ -100,3 +100,8 @@ def get_player_guess(board):
         except ValueError:
             print("Invalid input! Please enter a valid row number.")
 
+
+# Check if guess is a hit
+def is_hit(ships, guess_row, guess_col):
+    return (guess_row, guess_col) in ships
+

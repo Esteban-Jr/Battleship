@@ -111,3 +111,13 @@ def update_board(board, guess_row, guess_col, is_hit):
         board[guess_row][guess_col] = "X"  # Mark hit
     else:
         board[guess_row][guess_col] = "O"  # Mark miss
+
+# Reveal the ships at the end of the game
+def reveal_ships(board, ships):
+    for ship in ships:
+        if isinstance(ship, tuple):  # Ensure that ship is a tuple
+            ship_row, ship_col = ship
+            # Mark remaining ships with "S"
+            if board[ship_row][ship_col] == "~":  # Only mark if not hit
+                board[ship_row][ship_col] = "S"
+

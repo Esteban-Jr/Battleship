@@ -31,3 +31,7 @@ def ask_ready():
         else:
             print("Invalid input. Please type 'yes' to start or 'no' to exit.\n")
 
+# Create board
+def create_board():
+    return [["~"] * Board_size for _ in range(Board_size)]
+

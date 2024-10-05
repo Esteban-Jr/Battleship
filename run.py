@@ -44,3 +44,9 @@ def print_board(board):
         print(f"{i+1} " + " ".join(row))
     print() # Print a newline after the board
 
+# Function to randomly place the ship
+def place_ship():
+    ship_row = random.randint(0, Board_size - 1)
+    ship_col = random.randint(0, Board_size - 1)
+    return (ship_row, ship_col)
+

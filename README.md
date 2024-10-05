@@ -93,3 +93,11 @@ During gameplay, you'll be prompted to enter the coordinates for your shot in an
 - Row Number: You must enter a row number between 1 and 5
 - Column Letter: You must enter a column letter between A and E
 
+### What Happens When You Get a Hit?
+
+- If your guess is accurate and you hit a ship, the game will instantly notify you with a "Hit!" message
+- The grid will update to show your successful hit, with the corresponding cell marked by an 'X' This mark indicates that a ship has been struck in that specific location
+- The updated grid will appear, displaying the hit mark, allowing you to track your successful shots and adjust your strategy as needed
+
+![Hit](/assets/images/hit.png)
+

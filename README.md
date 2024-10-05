@@ -34,3 +34,9 @@ When the game starts, the instructions are displayed in the terminal, followed b
 - The game will continue until the player runs out of turns or the player has "Hit" all the ships
 - At the end a message will be displayed indicating the end of the game, this message will either say "Game over! You've run out of turns." or "Congratulations! You've sunk all the ships!"
 
+## Features
+
+- Ships are placed randomly on the board at the start of each new game, guaranteeing a distinct experience with every session
+- Player input is verified to confirm that all coordinates fall within the limits of the game board.
+- The game restricts the player from targeting the same location multiple times.
+

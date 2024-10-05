@@ -52,3 +52,21 @@ Below is a list of the software/applications used in the construction of this pr
     - Used to deploy the application and host it online.
 - [Am I Responsive](https://ui.dev/amiresponsive)
     - Used to create an image of the various display sizes of the site.
+
+## Testing
+
+## Game Testing
+
+![Screenshot of starting page](/assets/images/starting_page.png)
+
+When you run the program, you will be greeted with a "Welcome to the Battleships game !". This will be displayed at the top of the terminal
+
+The is set in a 5x5 grid that act as the ocean, there are 5 ships, each will be a in a 1x1 cell. Your objective will be to find and destroy the 5 ships within 15 shots
+
+The game's coordinate system is simple and easy to follow:
+
+- Rows are numbered 1 to 5
+- Columns are labeled A to E
+- To make a guess, you will be asked for a row number followed by a column letter (e.g., 1 A), this system enables you to aim at precise grid locations for your shots.
+
+![Are you ready?](/assets/images/start_game.png)

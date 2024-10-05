@@ -120,3 +120,14 @@ The game ends when either all enemy ships have been sunk or you have exhausted a
     - If you exhaust all 12 shots without sinking all the enemy ships, the game will notify you with a "Game Over" message. This message will indicate that you’ve run out of shots and include a summary of your performance, detailing how many ships remain afloat
     - The game will then reveal to you where the remaining ships were
 
+## Software Validation Testing
+
+The code was tested using Code Institute's Python Linter for PEP8 compliance. Two errors' were identified:
+
+- E501: Line too long — This issue arises when certain lines exceed the recommended length
+- E302 expected 2 blank lines, found 1 — This issue I have researched and tried many ways to fix but have been unable to
+
+I have checked the code to confirm that it operates correctly, even with these formatting exceptions.
+
+![Code Institute Python Linter](/assets/images/ci_python_linter.png)
+

@@ -35,3 +35,12 @@ def ask_ready():
 def create_board():
     return [["~"] * Board_size for _ in range(Board_size)]
 
+# Print board
+def print_board(board):
+    # Add column headers (A-E)
+    print("  " + " ".join(chr(65 + i) for i in range(Board_size)))
+    for i, row in enumerate(board):
+        # Add row numbers (1-5) on the left side
+        print(f"{i+1} " + " ".join(row))
+    print() # Print a newline after the board
+

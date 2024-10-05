@@ -144,3 +144,10 @@ The project was deployed using GitHub pages. The steps to deploy using GitHub pa
 
 The live link can be found here - [Battleship](https://battleships-vs-computer-d6d3e8954180.herokuapp.com/)
 
+### Resources Used
+
+- [W3Schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Youtube](https://www.youtube.com/)
+- [ChatGPT]
+

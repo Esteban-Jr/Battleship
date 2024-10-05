@@ -78,3 +78,12 @@ Before the game begins, you'll be asked a question: "Are you ready to start the 
 - If you type "yes," the game will start, and you'll move to the gameplay screen where you can begin guessing the positions of the enemy ships
 - If you type "no", the system will display "Exiting the game. See you next time!" and the game will end
 
+### Handling Invalid Inputs
+
+If you enter anything other than "yes" or "no," the system will display a message indicating the input is invalid ("Invalid input. Please type 'yes' to start or 'no' to exit."). It will then repeatedly prompt you with "Type 'yes' to start or 'no' to exit:" until a valid response is given. This ensures the game begins only when the player is fully prepared and understands the rules.
+
+![Invalid input](/assets/images/invalid_input.png)
+
+During gameplay, you'll be prompted to enter the coordinates for your shot in an attempt to hit an enemy ship. The input process is simple, but it’s crucial to provide valid coordinates:
+
+![Invalid coordinates](/assets/images/invalid_coordinates.png)

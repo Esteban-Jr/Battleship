@@ -105,3 +105,9 @@ def get_player_guess(board):
 def is_hit(ships, guess_row, guess_col):
     return (guess_row, guess_col) in ships
 
+# Update the board with the player's guess
+def update_board(board, guess_row, guess_col, is_hit):
+    if is_hit:
+        board[guess_row][guess_col] = "X"  # Mark hit
+    else:
+        board[guess_row][guess_col] = "O"  # Mark miss

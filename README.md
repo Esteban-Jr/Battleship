@@ -40,3 +40,15 @@ When the game starts, the instructions are displayed in the terminal, followed b
 - Player input is verified to confirm that all coordinates fall within the limits of the game board.
 - The game restricts the player from targeting the same location multiple times.
 
+## Software Used
+
+Below is a list of the software/applications used in the construction of this project:
+
+- [GitHub](https://github.com/)
+    - Used to store and manage the project's code.
+- [Visual Studio Code](https://code.visualstudio.com/)
+    - Used as the project's Integrated Development Environment (IDE).
+- [Heroku](https://dashboard.heroku.com/apps)
+    - Used to deploy the application and host it online.
+- [Am I Responsive](https://ui.dev/amiresponsive)
+    - Used to create an image of the various display sizes of the site.

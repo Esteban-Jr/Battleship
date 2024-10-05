@@ -151,3 +151,6 @@ The live link can be found here - [Battleship](https://battleships-vs-computer-d
 - [Youtube](https://www.youtube.com/)
 - [ChatGPT]
 
+## Acknowledgments
+
+The Code Institute slack community for their quick responses and very helpful feedback.

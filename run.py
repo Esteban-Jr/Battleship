@@ -19,3 +19,15 @@ def display_instructions():
     print("- A 'Hit' is marked with an 'X', and a 'Miss' is marked with an 'O'.\n")
     print("Are you ready to start the game? (yes/no)\n")
 
+# Function to get user confirmation before starting the game
+def ask_ready():
+    while True:
+        ready = input("Type 'yes' to start or 'no' to exit: \n").strip().lower()
+        if ready == 'yes':
+            return True
+        elif ready == 'no':
+            print("Exiting the game. See you next time!")
+            return False
+        else:
+            print("Invalid input. Please type 'yes' to start or 'no' to exit.\n")
+

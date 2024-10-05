@@ -121,3 +121,44 @@ def reveal_ships(board, ships):
             if board[ship_row][ship_col] == "~":  # Only mark if not hit
                 board[ship_row][ship_col] = "S"
 
+# Main game function
+def play_game():
+    board = create_board()
+    ships = place_ships()  # Define ships here and use them throughout the game
+    
+    print("\n")
+    print(f"Welcome to Battleships! You have {Max_turns} turns to sink {Num_ships} ships.\n")
+    
+    for turn in range(Max_turns):
+        turn_text = f"Turn {turn + 1}"
+        print(f"\n{turn_text}")
+        print("-" * len(turn_text))  # Underline the turn text
+        print("")
+        
+        # Print the board at the start of each turn (with ships hidden)
+        print_board(board)
+
+        # Call get_player_guess with the board argument
+        guess_row, guess_col = get_player_guess(board)  # Validated input
+
+        if is_hit(ships, guess_row, guess_col):
+            print("\nHit! You sank a ship!")
+            update_board(board, guess_row, guess_col, True)
+            ships.remove((guess_row, guess_col))  # Remove the sunk ship
+        else:
+            print("\nMiss!")
+            update_board(board, guess_row, guess_col, False)
+
+        if not ships:  # Check if all ships are sunk
+            print("\nCongratulations! You've sunk all the ships!")
+            print()
+            break
+    else:
+        print("\nGame over! You've run out of turns.")
+        print()
+
+    # After game ends, reveal where the remaining ships were
+    print("Revealing the remaining ships...\n")
+    reveal_ships(board, ships)
+    print_board(board)
+

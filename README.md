@@ -70,3 +70,11 @@ The game's coordinate system is simple and easy to follow:
 - To make a guess, you will be asked for a row number followed by a column letter (e.g., 1 A), this system enables you to aim at precise grid locations for your shots.
 
 ![Are you ready?](/assets/images/start_game.png)
+
+### User Input: Are you ready to start the game?
+
+Before the game begins, you'll be asked a question: "Are you ready to start the game?". You have to respond "yes" or "no":
+
+- If you type "yes," the game will start, and you'll move to the gameplay screen where you can begin guessing the positions of the enemy ships
+- If you type "no", the system will display "Exiting the game. See you next time!" and the game will end
+

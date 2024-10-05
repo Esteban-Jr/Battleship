@@ -12,3 +12,11 @@ For this project, the user interface is crafted to be intuitive and engaging, de
 
 To achieve a refined look, spaces and line breaks are strategically positioned to highlight key messages and actions. This method fosters a clean and organized layout, directing the user's focus to essential elements of the game, including instructions, prompts, and results.
 
+### User Stories
+
+As a player, I want the game to provide the following features:
+
+- List of instructions
+- A board that shows my guesses and where I can guess
+- Know whether my guess is a hit or miss
+- A turn counter to let me know which turn I am on

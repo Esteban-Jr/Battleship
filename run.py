@@ -162,3 +162,12 @@ def play_game():
     reveal_ships(board, ships)
     print_board(board)
 
+# Program entry point
+if __name__ == "__main__":
+    display_instructions()  # Show instructions
+    
+    # Ask if the player is ready to start the game
+    if ask_ready():
+        play_game()  # Start the game if the player is ready
+    else:
+        print("Thanks for playing! Goodbye.")

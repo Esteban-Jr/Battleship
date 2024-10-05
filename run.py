@@ -50,3 +50,12 @@ def place_ship():
     ship_col = random.randint(0, Board_size - 1)
     return (ship_row, ship_col)
 
+# Place multiple ships
+def place_ships():
+    ships = []
+    while len(ships) < Num_ships:
+        ship_row, ship_col = place_ship()
+        if (ship_row, ship_col) not in ships:  # Ensure no duplicate ships
+            ships.append((ship_row, ship_col))
+    return ships
+
